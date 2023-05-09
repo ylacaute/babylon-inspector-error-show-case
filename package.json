@@ -1,0 +1,30 @@
+{
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "clean": "rm -rf .parcel-cache dist",
+    "start": "parcel --open",
+    "type-check": "tsc --noEmit"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "@babylonjs/core": "^6.2.0",
+    "@babylonjs/gui": "^6.2.0",
+    "@babylonjs/loaders": "^6.2.0",
+    "@babylonjs/materials": "^6.2.0"
+  },
+  "devDependencies": {
+    "parcel": "2.8.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "typescript": "5.0.4",
+    "@babylonjs/inspector": "^6.2.0"
+  }
+}
